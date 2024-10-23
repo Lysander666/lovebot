@@ -530,7 +530,7 @@ responses=(
 )
 
 # Start the chatbot
-echo "Chatbot: Hello, my love! It's Amara, your loving chatbot here. Say anything positive at all for a loving response. Type 'bye' or 'exit' to end the conversation."
+echo "Amara: Hello, my love! It's Amara, your loving chatbot here. Say anything positive at all for a loving response. Type 'bye' or 'exit' to end the conversation."
 
 while true; do
     read -p "You: " user_input
@@ -541,5 +541,5 @@ while true; do
     fi
     # Output a random loving response
     index=$((RANDOM % ${#responses[@]}))
-    echo "Chatbot: ${responses[$index]}"
+    echo "Amara: ${responses[$index]}"
 done
